@@ -6,7 +6,9 @@ Each file will reflect both **Technical growth** and **InnerOuterBalance** allig
 >"as with in so without  the code reflects my mind only."
 
 file journals
-
+------------------------------------------------------
+--------------------------------------------------
+_________________________________________________
 #1. helloworldhtml.html 
 
 gam
@@ -18,6 +20,8 @@ my html learning exp. created html using the tags
 <strong></strong>
 gam**
 #######
+---------------------------------------------------
+____________________________________________________-
 #2. Assignment.html
  my html assingment on creating a html template.
  tags involved:
@@ -34,13 +38,21 @@ gam**
 </html>
 gam**
 #########
+--------------------------------------------------
+_______________________________________________________
 3.Assignment1.html
 my html basic webpage assingment 
 in this webpage i used assignment .html template 
 and included h3 and h6 . 
 with in assignment i labelled h1, h3 and h6.
  all other tags are same as assignment.html file. 
+---------------
+ later additions
+---------------
+ added an image dd1.png usign <img> 
+ also usded figure tag and figure caption tag.
+
  gam**
 
  ########
- 
+ _________________________________________________________
