@@ -51,8 +51,29 @@ with in assignment i labelled h1, h3 and h6.
 ---------------
  added an image dd1.png usign <img> 
  also usded figure tag and figure caption tag.
+--------
+another addition on a later instance
+----------
+-a tag to wolfinsteadofdog.html file
+
 
  gam**
 
  ########
  _________________________________________________________
+4.wolfinsteadofdog.html
+
+original filename asked to make was dog.html
+what i made was wolf instead of dog (because i wanted to use my own image for this project)
+
+
+This is a file made to showcase the implicit a taging . 
+image added wolf.png with alt and width 
+figcaption also added. 
+return strong tagged href also added.
+
+
+gam**
+######
+__________________________________________________
+
