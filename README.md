@@ -55,6 +55,8 @@ with in assignment i labelled h1, h3 and h6.
 another addition on a later instance
 ----------
 -a tag to wolfinsteadofdog.html file
+------------
+-explicit image added href ed.
 
 
  gam**
