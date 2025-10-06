@@ -16,4 +16,21 @@ my html learning exp. created html using the tags
 <title></title>
 <p></p>
 <strong></strong>
-gam 
+gam**
+#######
+#2. Assignment.html
+ my html assingment on creating a html template.
+ tags involved:
+ <!DOCTYPE html>
+<html lang="eng">
+    <head> 
+    </head>
+    <body></body>
+    <header></header>
+    <h1></h1>
+    <main></main>
+    <footer></footer>
+    <small></small>
+</html>
+gam**
+#########
