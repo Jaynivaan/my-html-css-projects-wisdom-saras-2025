@@ -34,3 +34,13 @@ gam**
 </html>
 gam**
 #########
+3.Assignment1.html
+my html basic webpage assingment 
+in this webpage i used assignment .html template 
+and included h3 and h6 . 
+with in assignment i labelled h1, h3 and h6.
+ all other tags are same as assignment.html file. 
+ gam**
+
+ ########
+ 
