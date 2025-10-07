@@ -113,8 +113,14 @@ this is the assignment to learn javascript
  
 
  6a# 
- Basic_HTML_2.html
+ Basic_HTML_1.html
  the new html file with title "aware Html"
  updated the nav routing in all files and learned ../ routing to a file in parent dir.
- _________________________________________
+ _
+ 6b#
+ Basic_JavaScript_1.js
+ the js file created as part of learning the src attribute. linked this file with the 
+ Basic_HTML_1.html through script tag.
+
+ --
  
