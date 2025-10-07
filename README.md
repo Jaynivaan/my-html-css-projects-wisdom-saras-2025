@@ -66,7 +66,12 @@ later update
 
 nav bar added 
 
-
+-----------
+CHALLENGE #1 COMPLETED
+---------------
+-ADDED THE BLOCKQUOTE 
+-ADDED EMBEDDED VIDEO F
+-USED H4 HEADING 
 
  gam**
 
