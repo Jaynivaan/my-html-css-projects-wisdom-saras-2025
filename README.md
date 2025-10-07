@@ -60,6 +60,12 @@ another addition on a later instance
 -explicit image link updated also added a final gratitude paragraph. 
 -commit and push failed multiple times .
 -used the command "git add -A" with the commit -m "A" and was succussful with the push
+---------
+later update
+---------
+
+nav bar added 
+
 
 
  gam**
@@ -77,8 +83,21 @@ image added wolf.png with alt and width
 figcaption also added. 
 return strong tagged href also added.
 
+---------
+later update
+---------
+
+nav bar added 
+
 
 gam**
 ######
 __________________________________________________
 
+5.dogvideo.html
+
+this is the page where i placed the link of a youtube dog video
+nav bar placed and copied to other two pages ie, assignment1.html and wolfinsteadofdog.html
+
+###############
+_______________________________________________________-
