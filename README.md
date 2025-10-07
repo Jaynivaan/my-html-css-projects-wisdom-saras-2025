@@ -57,6 +57,9 @@ another addition on a later instance
 -a tag to wolfinsteadofdog.html file
 ------------
 -explicit image added href ed.
+-explicit image link updated also added a final gratitude paragraph. 
+-commit and push failed multiple times .
+-used the command "git add -A" with the commit -m "A" and was succussful with the push
 
 
  gam**
