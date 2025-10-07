@@ -106,3 +106,15 @@ nav bar placed and copied to other two pages ie, assignment1.html and wolfinstea
 
 ###############
 _______________________________________________________-
+
+6# NEW DIR:
+Basic_Html_and_JavaScript_1
+this is the assignment to learn javascript 
+ 
+
+ 6a# 
+ Basic_HTML_2.html
+ the new html file with title "aware Html"
+ updated the nav routing in all files and learned ../ routing to a file in parent dir.
+ _________________________________________
+ 
