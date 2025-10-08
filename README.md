@@ -159,4 +159,9 @@ Basic_CSS_1.css
 this is the new file created as part of the challenge from  the course to link a external css to the Basic_HTML_3.html file head tag. 
 included p tag styling , footer styling for regular and on hover styling (copied from the oldstylesheet My_Style.css file )
 
-
+--
+7d#
+Basic_HTML_4.html 
+ this page is created to learn how he class attributes are used to style various elements in the html file ..
+ even the element trait is over rided by the property value of the class pointed to .
+ --
