@@ -118,7 +118,7 @@ this is the assignment to learn javascript
  updated the nav routing in all files and learned ../ routing to a file in parent dir.
 
 -the font color assignment completed using the color name and color hex code.
-
+-three h1 tag and three p tags added as part of font face and size assignment.
 
  _
 
