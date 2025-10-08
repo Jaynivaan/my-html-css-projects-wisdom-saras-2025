@@ -166,4 +166,15 @@ Basic_HTML_4.html
  even the element trait is over rided by the property value of the class pointed to .
  -
  added the my_style class and added a new p tag element to instance it. 
- .
+ .--
+ 7e#
+
+ Basic_HTML_5.html
+ this file was created for an assignmet where styling is linked to the file Basic_CSS_2.css file . 
+
+ --
+ 7f#
+ Basic_CSS_2.css
+  this the file created part of assignment to style the file 7e#
+
+  ---
