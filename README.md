@@ -120,6 +120,7 @@ this is the assignment to learn javascript
 -the font color assignment completed using the color name and color hex code.
 -three h1 tag and three p tags added as part of font face and size assignment.
 - as part of tags b,i and u added four paras under a new h2 (assignment on b,i and u tag completed.)
+-alt tag attribute and a src is invalid to display an elaborate alt text relevancy.. 
  _
 
 
