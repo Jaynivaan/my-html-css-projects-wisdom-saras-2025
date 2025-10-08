@@ -138,12 +138,21 @@ this is the assignment to learn javascript
 
 ___________________________________________________
 7# NEW DIR:
+7a#
 Basic_HTML_and_CSS
 --
 as part of assignment on the css footer is styled for regular and on hover states. 
 it was fun to do that .. 
 transition placed is ease in out . 
 ran the code and its cool.*gam*
+--
+removed the stylings from this file and added a link to css file tag within head tag element. 
+*gam*
+
+7b#
+My_Style.css
+new style sheet added and pasted all the styling did in the 7a# file . 
+*gam*
 --
 
 

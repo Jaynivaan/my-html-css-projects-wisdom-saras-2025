@@ -1,0 +1,25 @@
+div{
+            background-color: burlywood;
+            border: 2px solid orange;
+     }
+
+p{
+            color:blueviolet;
+ }
+footer{
+            background-color: bisque;
+            border: 2px solid red;
+            text-align: right;
+            color:darkmagenta;
+            font-family: "verdana",sans-serif;
+            font-size: 14px;
+            padding:10px 20px;
+
+        }
+
+ footer:hover {
+            background-color:lavenderblush;
+            border-color:blueviolet;
+            color:purple;
+            transition:all 0.3s ease-in-out;
+        }
