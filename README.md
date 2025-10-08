@@ -164,4 +164,6 @@ included p tag styling , footer styling for regular and on hover styling (copied
 Basic_HTML_4.html 
  this page is created to learn how he class attributes are used to style various elements in the html file ..
  even the element trait is over rided by the property value of the class pointed to .
- --
+ -
+ added the my_style class and added a new p tag element to instance it. 
+ .
