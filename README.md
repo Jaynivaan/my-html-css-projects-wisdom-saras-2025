@@ -137,9 +137,9 @@ this is the assignment to learn javascript
   --part two also completed by pasting the function in the js file and adding the src in script tag leaving hte element part empty.
 
 ___________________________________________________
-7# NEW DIR:
+7# NEW DIR:Basic_HTML_and_CSS
 7a#
-Basic_HTML_and_CSS
+Basic_HTML_3.html
 --
 as part of assignment on the css footer is styled for regular and on hover states. 
 it was fun to do that .. 
@@ -154,5 +154,9 @@ My_Style.css
 new style sheet added and pasted all the styling did in the 7a# file . 
 *gam*
 --
+7c#
+Basic_CSS_1.css 
+this is the new file created as part of the challenge from  the course to link a external css to the Basic_HTML_3.html file head tag. 
+included p tag styling , footer styling for regular and on hover styling (copied from the oldstylesheet My_Style.css file )
 
 
