@@ -127,4 +127,5 @@ this is the assignment to learn javascript
   Basic_HTML_2.html
   -two part assignment 
   --"get documentby id " is the content we are dealing.
-  --
+  --part two also completed by pasting the function in the js file and adding the src in script tag leaving hte element part empty.
+
