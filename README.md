@@ -136,3 +136,8 @@ this is the assignment to learn javascript
   --"get documentby id " is the content we are dealing.
   --part two also completed by pasting the function in the js file and adding the src in script tag leaving hte element part empty.
 
+___________________________________________________
+7# NEW DIR:
+Basic_HTML_and_CSS
+
+
