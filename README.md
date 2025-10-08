@@ -139,5 +139,11 @@ this is the assignment to learn javascript
 ___________________________________________________
 7# NEW DIR:
 Basic_HTML_and_CSS
+--
+as part of assignment on the css footer is styled for regular and on hover states. 
+it was fun to do that .. 
+transition placed is ease in out . 
+ran the code and its cool.*gam*
+--
 
 
