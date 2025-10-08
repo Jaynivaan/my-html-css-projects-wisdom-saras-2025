@@ -123,4 +123,8 @@ this is the assignment to learn javascript
  Basic_HTML_1.html through script tag.
 
  --
- 
+ 6c#
+  Basic_HTML_2.html
+  -two part assignment 
+  --"get documentby id " is the content we are dealing.
+  --
