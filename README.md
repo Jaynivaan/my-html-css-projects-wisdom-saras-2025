@@ -178,3 +178,9 @@ Basic_HTML_4.html
   this the file created part of assignment to style the file 7e#
 
   ---
+  7g#
+  html_table.html 
+  a file to learn table in html/
+
+  --
+  
