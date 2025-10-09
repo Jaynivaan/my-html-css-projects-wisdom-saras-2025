@@ -174,7 +174,7 @@ Basic_HTML_4.html
 
  --
  updated the sheet with elaborate styling for completing the assignmet on <ol tag, ultag, entity name .
- 
+
  7f#
  Basic_CSS_2.css
   this the file created part of assignment to style the file 7e#
@@ -208,5 +208,18 @@ updated the sheet with elaborate styling for completing the assignmet on <ol tag
    this is the styling for the file 7h#
 
    **gam*
+
+   --
+
+   7k#
+   mirrorform.html
+   a file created to learn the form method in html. 
+   a style sheet also created ie 7l#
+
+   --
+
+   7k#
+   mirrorstyle.css 
+   this is the styling sheet for the mirrorform.html
 
    --
