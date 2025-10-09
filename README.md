@@ -181,22 +181,29 @@ Basic_HTML_4.html
   7g#
   html_table.html 
   a file to learn table in html/
+   the table style link added from an external css file  7i#
 
   --
   7h#
   Html_list.html
   this is a file made to complete the list assignment where i created a ordered list and unordered list..
   -
-  the table style link added from an external css file  7i#
+  the table style link added from an external css file  7j#
   *gam**
   -
 
   7i#
   CSS_Table.css
 
-  this is the file linked to table.html file ie, 7h#
+  this is the file linked to table.html file ie, 7g#
 
   **gam*
   --
 
-  
+  7j#
+  CSS_Lists.css
+   this is the styling for the file 7h#
+
+   **gam*
+
+   --
