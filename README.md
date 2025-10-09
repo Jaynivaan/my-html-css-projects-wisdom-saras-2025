@@ -173,10 +173,13 @@ Basic_HTML_4.html
  this file was created for an assignmet where styling is linked to the file Basic_CSS_2.css file . 
 
  --
+ updated the sheet with elaborate styling for completing the assignmet on <ol tag, ultag, entity name .
+ 
  7f#
  Basic_CSS_2.css
   this the file created part of assignment to style the file 7e#
-
+-
+updated the sheet with elaborate styling for completing the assignmet on <ol tag, ultag, entity name and the textshadow property. in html Basic_html_5.html file
   ---
   7g#
   html_table.html 
