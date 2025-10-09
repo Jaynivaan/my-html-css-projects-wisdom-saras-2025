@@ -186,5 +186,17 @@ Basic_HTML_4.html
   7h#
   Html_list.html
   this is a file made to complete the list assignment where i created a ordered list and unordered list..
-  *gam
+  -
+  the table style link added from an external css file  7i#
+  *gam**
+  -
+
+  7i#
+  CSS_Table.css
+
+  this is the file linked to table.html file ie, 7h#
+
+  **gam*
   --
+
+  
