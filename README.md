@@ -223,3 +223,28 @@ updated the sheet with elaborate styling for completing the assignmet on <ol tag
    this is the styling sheet for the mirrorform.html
 
    --
+
+   8 
+   project
+   
+   a new directory created for the basic website assignment.
+   -
+   8#a
+   index.html
+   this is the file where the basic  html frame of the mirrror website is crafted...
+
+   8#b
+   css
+   directory for css
+
+
+   8#c
+   images
+   directory for images of project
+
+9 new directory created in root folder
+One_page_website
+this is part of the assignmetn one page website as a requirement fromthe course..
+
+9a
+this is the html file associated with the one_page_website..

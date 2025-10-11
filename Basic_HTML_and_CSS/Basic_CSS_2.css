@@ -38,7 +38,7 @@ ul , ol {
 }
 
 li {
-    margin 6px 0;
+    margin: 6px ;
 
 }
 
@@ -51,5 +51,5 @@ li {
     text-align: center;
     font-style: italic;
     text-shadow: 1px 1px 2px #bbb;
-    
+
 }
