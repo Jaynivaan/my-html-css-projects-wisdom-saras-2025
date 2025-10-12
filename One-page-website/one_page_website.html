@@ -76,7 +76,7 @@
         <!--Gallery-section-end-here*gam*-->
         <!--lightbox-overlay-->
         <div id="lightbox" class="hidden">
-            <div class = "lightbox content">
+            <div class = "lightbox-content">
                 <img id="lightbox-img" src="" alt="&infin;expanding&infin;awareness&infin;">
                 <span id ="close-lightbox">&times;</span>
             </div>
@@ -217,7 +217,7 @@
             const closeBtn = document.getElementById('close-lightbox');
             
             galleryImgs.forEach(img =>{
-                image.addEventListener('click',() => {
+                img.addEventListener('click',() => {
                     lightbox.classList.add('show');
                     lightboxImg.src = img.src;
 
