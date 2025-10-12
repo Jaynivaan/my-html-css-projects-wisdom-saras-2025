@@ -107,9 +107,8 @@ nav a:hover {
 /*highlight the link that points to the current: target section*/
 :target{/*the sectionitself*/ outline:0}
 :target h2{ color:var(--accent-ink)}
-nav a [href*="#"]{
+nav a[href*="#"]{
     position:relative;
-
 }
 
 section:target::before{
@@ -216,6 +215,30 @@ button:hover{
 }
 button:active{
     transform:translateY(1px);
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+    height:auto;
+    margin:0 .5rem 0 0; /*little space before teh label text*/
+    vertical-align: middle;/*allign circle with text base line*/
+    accent-color: var(--accent);
+}
+
+/*to keep the radio and text on one line and vertically centered*/
+label{ margin:.35rem 0;}
+label > input[type="radio"],
+label > input [type="checkbox"]{
+    margin-right:.5rem;
+}
+
+label:has(> input[type="radio"]),
+label:has(> input[type="checkbox"]){
+    display:inline-flex;
+    align-items: center;
+    gap:.5rem;
+    width:fit-content;
 }
 
 
