@@ -83,7 +83,12 @@
             <H3>
                 &downarrow;the&infin;videio&downarrow;
             </H3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oifc7NUOOVI?si=AYY0KnEZtB3qOhMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class ="video-wrap">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oifc7NUOOVI?si=AYY0KnEZtB3qOhMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+            
             <P>
                 The reality you encounter is just a bunch of reflections.. you attach relevancies to it when nothing is really relevant trully.<br>
                 All that is .... is ... this awareness witnessing through your ego Name square..<br>
@@ -119,24 +124,84 @@
                     <label><input type ="radio" name ="phase" value ="fumigatiion">fumigation</label><br>
                     <label><input type ="radio" name ="phase" value ="awakening">AwakeninG</label><br>
                     <label><input type ="radio" name ="phase" value ="enlightened">ENLIGHTENed</label>
-                </fieldset>
+
+                    <p>
+                        <strong>Commitment</strong>
+                    </p>
+
+                    <select name="commitment" required>
+                        <option value="" selected disabled ><i>sir, kindly choose one option below...</i></option>
+                        <option>Daily</option>
+                        <option>Weekly</option>
+                        <option>Monthly</option>
+                    </select>
+
+                    <p>
+                        <label for="clarity"><strong>Clarity&infin;Now</strong>:
+                        <output id ="clarity_out">50</output>%</label><br>
+                        <input id="clarity" name="clarity" type="range" min="0" max ="100" value ="50"
+                        oninput="clarity_out.value= this.value">
 
 
-                
-                
-                
-                
-                
+                    </p>
 
+                </fieldset><br>
+
+                <details>
+                    <summary>
+                        Privacy & Purpose
+                    </summary>
+                    <p>This demo  submits via your mail app using <code>mailto:</code>.. everything is an illusion... here nothing is stored in server,,, idont have memory i also dont have money to pay for cloud memory .. ha ha</p>
+                </details>
+
+                <button type ="submit"> send Invocation to ethers;;</button>                  
+                                                        
             </form>
         </section>
         <!--contact-form-section-end-here*gam*-->
 
 
+
         <!--footer-section-->
+        <footer>
+            <p>When names fade, only<b>Awareness</b> &infin;remains sir...&hearts;</p>
+           *gam* <i>&copy;no &not;copyrights or  rerserved dust here &infin;</i>*gam*
+        </footer>
         <!--footer-section end here*gam*-->
 
         <!--javascript-effect-section-->
+        <script>
+
+            //grab elements//
+        const input = document.getElementById('nameInput');
+        const response = document.getElementById('response');
+
+
+            //the timer
+        let timer= null;
+
+        if (input && response) {
+            input.addEventListener('input',() => {
+                clearTimeout(timer);
+
+                //show whats typed//
+                
+                response.textContent = `"${input.value}" is seen....yet who is watching?`;
+
+                //after 3 seconds clear and show message with &infin;
+                timer = setTimeout(()=>{
+                    input.value = '';
+                    //&infin; rendering is a problem ??what to do ..///??///
+                    response.textContent = 'The name dissolves. the ∞witness∞ alone remains.';
+
+                }, 3000);
+            });
+        }   else {
+            console.log('nameInput or response element not found.');
+        }
+
+        </script>
+
         <!--javascript-effect-section-end-here*gam*-->
     </body>
 
