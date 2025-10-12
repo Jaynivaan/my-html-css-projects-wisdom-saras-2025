@@ -28,7 +28,8 @@ footer(separator,small text)
     --muted:#6b7280;
     --line:#e5e7eb;
     --accent:#0f766e;
-    --radius:#10px;
+    --accent-ink:#0a4f49;
+    --radius:10px;
     --space:clamp(12px, 1.5vw, 20px);
     --container: 920px;
 
@@ -50,13 +51,10 @@ body>nav,
 header nav {
     position:sticky;top:0;
     background:var(--bg);
-    border-bottom:1px solid car(--line);
+    border-bottom:1px solid var(--line);
     z-index: 10;
-    padding:-0.5rem var(--space);
-    display:flex; gap:1rem; flex-wrap:wap;
-
-
-
+    padding:.5rem var(--space);
+    display:flex; gap:1rem; flex-wrap:wrap;
 }
 
 /*type scale and vertical rhythm*/
@@ -108,7 +106,7 @@ nav a:hover {
 
 /*highlight the link that points to the current: target section*/
 :target{/*the sectionitself*/ outline:0}
-:target h2{ color:var(--accent-ink);}
+:target h2{ color:var(--accent-ink)}
 nav a [href*="#"]{
     position:relative;
 
@@ -128,7 +126,7 @@ section:target::before{
 #gallery{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap; calc(var(--space)*.8);
+    gap:calc(var(--space)*.8);
 }
 #gallery h2,
 #gallery h3{ grid-column:1 / -1; } /*headings span full width*/
@@ -190,12 +188,12 @@ textarea{resize: vertical; min-height: 140px;}
 input:focus, select:focus, textarea:focus, button:focus{
     outline:none;
     border-color:var(--accent);
-    box-shadow: 0 0 0 .18rem color-mix(in srgb,var(--accent) 20%, transparant);
+    box-shadow: 0 0 0 .18rem color-mix(in srgb,var(--accent) 20%, transparent);
 
 }
 
 /*range plus live output*/
-input[type="range"]{width=100%;}
+input[type="range"]{width:100%;}
 output{font-weight:700;}
 
 
