@@ -1,0 +1,238 @@
+/*
+hooks from html file
+-------------------
+body-->(font, max width and spacing)
+
+nav + nav a (horizontal layout, sticky,active/hover/focus)
+
+section --> (vertical rhythm)
+
+headings -->(H1,H2 and H3)
+
+gallery-->img(responsive images)
+
+.video-wrap-->(iframe responsive video)
+
+forms:-->( form, fieldset, legend, label, input, select, textarea, button)
+
+widgets--> details, summary and output
+
+footer(separator,small text)
+
+ */
+ 
+ /*====base.tokens====*/
+:root {
+    --bg:#ffffff;
+    --text:#1f2328;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --accent:#0f766e;
+    --radius:#10px;
+    --space:clamp(12px, 1.5vw, 20px);
+    --container: 920px;
+
+}
+
+*{box-sizing: border-box;}
+html,body{height:100%}
+body{
+    margin:0;
+    font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color:var(--text);
+    background: var(--bg);
+}
+
+img{max-width: 100%; height:auto; display: block;}
+
+/*layout*/
+body>nav,
+header nav {
+    position:sticky;top:0;
+    background:var(--bg);
+    border-bottom:1px solid car(--line);
+    z-index: 10;
+    padding:-0.5rem var(--space);
+    display:flex; gap:1rem; flex-wrap:wap;
+
+
+
+}
+
+/*type scale and vertical rhythm*/
+h1{font-size: clamp(1.9rem, 3.6vw,2.7rem);margin:.25em 0 .2em}
+h2{font-size:clamp(1.4rem, 2.6vw, 2rem); margin:.7em 0 .25em}
+h3{font-size:clamp(1.05rem, 2vw,1.25rem); color:var(--muted );margin:.35em 0 .6em}
+p{margin:.6em 0}
+
+
+/*making each section each separate container*/
+section{
+    width:min(100%, var(--container));
+    margin-inline: auto;
+    padding: calc(car(--space)*1.2)var(--space);
+    scroll-margin-top: 68px; /*offsets sticky nav while on instance of jumping to id links*/
+
+
+}
+
+/*soft separators between sections*/
+
+section+section {border-top:1px solid var(--line);}
+
+
+
+
+/**=====clamp makes responsive font sizes possible 
+scroll -margin-top fixes anchor overlap issue with sticky nav=======*/
+
+
+
+/*nav links: default+hover*/
+
+nav a {
+    text-decoration: none;
+    color:var(--accent-ink);
+    padding:.4rem .6rem;
+    border-radius:6px;
+
+}
+
+nav a:focus,
+nav a:hover {
+    background:var(--accent);
+    color:#fff;
+    outline:none;
+
+}
+
+/*highlight the link that points to the current: target section*/
+:target{/*the sectionitself*/ outline:0}
+:target h2{ color:var(--accent-ink);}
+nav a [href*="#"]{
+    position:relative;
+
+}
+
+section:target::before{
+    content:"";
+    display:block;
+    height:0;
+    border-top:3px solid var(--accent);
+    margin-top:-3px;
+    margin-bottom:.6rem;
+
+}
+
+/*responsive gallery grid using auto-fit*/
+#gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap; calc(var(--space)*.8);
+}
+#gallery h2,
+#gallery h3{ grid-column:1 / -1; } /*headings span full width*/
+#gallery img{
+    border:1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+/*autofit plus minmax is used to create elastic columns*/
+.video-wrap{
+    aspect-ratio: 16/9;
+    width:100%;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    background:#000;
+    margin-bottom:.6rem;
+}
+.video-wrap iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+/*aspect  ratio method is modern simpler way to gofor */
+
+/*form container width */
+form{ max-width:680px;}
+
+/*grouping*/
+fieldset{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:1rem;
+    margin:.8rem 0;
+
+}
+
+legend { font-weight: 600; padding:0 .4rem;}
+label {font-weight :600;}
+
+/*controls*/
+input,select,textarea,button {
+    width:100%;
+    box-sizing: border-box;
+    padding:.65rem .75rem;
+    margin-top:.35rem;
+    border:1px solid #cbd5e1;
+    border-radius: 8px;
+    background:#fff;
+    color:var(--text);
+
+}
+
+textarea{resize: vertical; min-height: 140px;}
+
+/*focus ring(accessible ,not ugly)*/
+
+input:focus, select:focus, textarea:focus, button:focus{
+    outline:none;
+    border-color:var(--accent);
+    box-shadow: 0 0 0 .18rem color-mix(in srgb,var(--accent) 20%, transparant);
+
+}
+
+/*range plus live output*/
+input[type="range"]{width=100%;}
+output{font-weight:700;}
+
+
+/*details summary widget*/
+details{margin:.6rem 0;}
+summary{cursor:pointer; font-weight:600;}
+
+/*submit button*/
+button{
+    background:var(--accent);
+    color:#fff;
+    font-weight:700;
+    border:0;
+    cursor:pointer;
+    border-radius:8px;
+    padding:.7rem 1rem;
+}
+button:hover{
+    filter:brightness(.95);
+}
+button:active{
+    transform:translateY(1px);
+}
+
+
+footer{
+    width:min(100%, var(--container));
+    margin-inline:auto;
+    padding:calc(var(--space)*1.2) var(--space);
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    text-align:center;
+    font-size: .95rem;
+}
+
+footer p {margin:.5rem 0;}
+
+
+
+
