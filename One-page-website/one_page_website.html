@@ -71,7 +71,16 @@
             <img src="images/thumbs/name_1.jpg" alt="this is an utility that is necessary for attachments and its labellings">
             <img src="images/thumbs/name_2.jpg" alt="this is the situation when you are iterating yourself to a limited identity and consequently forgetting your real nature.">            
         </section>
+
+
         <!--Gallery-section-end-here*gam*-->
+        <!--lightbox-overlay-->
+        <div id="lightbox" class="hidden">
+            <div class = "lightbox content">
+                <img id="lightbox-img" src="" alt="&infin;expanding&infin;awareness&infin;">
+                <span id ="close-lightbox">&times;</span>
+            </div>
+        </div>
 
 
 
@@ -199,6 +208,29 @@
         }   else {
             console.log('nameInput or response element not found.');
         }
+
+        </script>
+        <script>
+            const galleryImgs =document.querySelectorAll ('#gallery img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.getElementById('close-lightbox');
+            
+            galleryImgs.forEach(img =>{
+                image.addEventListener('click',() => {
+                    lightbox.classList.add('show');
+                    lightboxImg.src = img.src;
+
+                });
+            });
+            closeBtn.addEventListener('click',() => {
+                lightbox.classList.remove('show');
+            });
+
+            //click outside image to close
+            lightbox.addEventListener('click', e => {
+                if (e.target === lightbox) lightbox.classList.remove('show');
+            });
 
         </script>
 

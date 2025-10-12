@@ -126,13 +126,32 @@ section:target::before{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap:calc(var(--space)*.8);
+    align-items: stretch;
 }
+
+
 #gallery h2,
 #gallery h3{ grid-column:1 / -1; } /*headings span full width*/
 #gallery img{
+
+    width:100%;
+    aspect-ratio: 4/3;
+    height:auto;
+    object-fit:cover;
+    border: 1px solid var(--line);
+    border-radius:var(--radius);
+    display: block;
+    /*subtle hover*/
+    transition: transform .2s ease;
+
+    /*
     border:1px solid var(--line);
     border-radius: var(--radius);
+    */
 }
+
+#gallery img:hover{ transform: scale(1.02);}
+
 
 /*autofit plus minmax is used to create elastic columns*/
 .video-wrap{
@@ -257,3 +276,77 @@ footer p {margin:.5rem 0;}
 
 
 
+/*========lightbox=========*/
+#lightbox{
+    position: fixed;
+    inset:0;
+    background:rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events:none;
+    transition: opacity .4s ease;
+}
+
+#lightbox.show{
+    opacity:1;
+    pointer-events:auto;
+
+}
+
+.lightbox-content{
+    position:relative;
+    max-width: 90vw;
+    max-height:90vh;
+    border-radius: var(--radius);
+    overflow:hidden;
+    box-shadow:0 0 60px rgba(255, 255, 255, 0.1);
+    animation:floatUp .5s ease;
+
+}
+
+.lightbox-content img{
+    width: 100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+    filter:drop-shadow(0 0 25px rgba(255, 255, 255, 0.15));
+}
+
+/*close button*/
+#close-lightbox{
+    position:absolute;
+    top:.4rem; right: .8rem;
+    font-size:2rem;
+    color:#fff;
+    cursor:pointer;
+    user-select: none;
+    transition: transform .2s ease;
+}
+
+#close-lightbox:hover {transform:scale(1.2);}
+
+
+/*faint watermark of infinity*/
+ #lightbox::after{
+    content:"∞";
+    position:absolute;
+    font-size:30vw;
+    color:rgba(255, 255, 255, 0.05);
+    animation:rotateInf 40s linear infinite;
+    pointer-events: none;
+
+ }
+
+ @keyframes rotateInf{
+    from{ transform:rotate(0deg);  }
+    to {transform:rotate(360degree);}
+ }
+
+ @keyframes floatUp{
+    from{transform: translateY(30px); opacity:0;}
+    to {transform:translateY(0);opacity:1;}
+ }
