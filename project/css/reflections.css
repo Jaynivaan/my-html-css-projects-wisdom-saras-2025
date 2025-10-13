@@ -24,3 +24,179 @@ MORE valuable Words for a fool like me::
 
 /*gam*/
 
+
+/*==========================================================================
+   REFLECTIONS.CSS -OUR STYLE PAINTBOX
+   Bootstrap= ready-made clothes. we add the colors and glow
+   =================================================================**gam***/
+
+/* 0) Global Theme (pick colors and smooth scrolling)*/
+:root {
+    --bg: #0a0a0a;      /*page background = deep night */
+    --ink: #f2f2f2;     /*main text color = soft white */
+    --muted: #a7adb3;   /*small text = soft gray*/
+    --accent: #c0a36e;  /*gold highlight for headings/buttons*/
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    margin: 0;
+}
+
+/* 1)   HEADER BAR (Sticky top bar that glows a bit) */
+.bar {
+    background: linear-gradient(90deg, #121212, #1e1e1e);
+    border-bottom: 1px solid #222;
+    position: sticky; top: 0; z-index: 1000;
+    box-shadow: 0 4px 14px rgba(0,0,0,.35);
+}
+.bar a{ color: var(--ink); text-decoration: none; }
+.bar a:hover{ color: var(--accent);}
+.brand{ font-weight: 800; letter-spacing: .08em; color: var(--accent);}
+.toggle{
+
+    border: 1px solid #3a3a3a; padding: .35rem .6rem; border-radius: 8px;
+    cursor: pointer;
+
+}
+
+/*HERO SECTION BIG IMAGE AND CENTERED TEXT OVERLAY*/
+.hero{ position:relative; text-align: center; }
+.hero img{
+    width: 100%;
+    height: 85vh;       /*tall like cinematic*/
+    object-fit: cover;  /*fill without warping*/
+    filter:brightness(.5);  /*darken so text is READABLE*/
+
+}
+
+.hero-txt{
+    position: absolute; inset: 0;
+    display: grid; place-content: center; gap: .6rem;
+    padding: 0 1rem;
+}
+
+.hero-txt h1{ color: var(--accent); font-size: clamp(1.6rem, 3vw, 2.6rem;);}
+.hero-txt p{ color: #e6e6e6; }
+.btn{ border-radius: 8px; font-weight: 700; }
+
+/*3) PRACTICE CARDS (TIDY BOXES)*/
+.practice h2{
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--accent);
+}
+.practice .card{
+    background: #141414;
+    color: var(--ink);
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 10px 24px rgba(0,0,0,.3);
+}
+.check{ display: inline-flex; gap: .5rem; align-items: center;}
+
+/*accept /reject reveal (CSS-only).
+The Html file has radio buttons with ids,#accept and #refect placed before these boxes.
+we show the matching message when the corresponding radio is clicked.**gam***
+*/
+.choices{ display:grid; gap: .6rem; margin-top: .5rem; }
+.choices input{ display:none; }
+.choices label{
+    border: 1px solid #3a3a3a; border-radius: 8px; padding: .4rem .7rem;
+    text-align: center; cursor: pointer;
+}
+.result{ display: none; background: #0f0f0f; border: 1px solid #303030; border-radius: 8px; padding: .6rem .8rem;}
+#accept:checked ~ .result.accept{ display:block; }
+#reject:checked ~ .result.reject{ display:block; }
+.mantra{ color: var(--muted); text-align: center; margin-top: .5rem;}
+
+
+/*gallery( stop overlap and equalheight s)*/
+
+.mirror-card{
+    position: relative;     /*caption positions inside this box*/
+    overflow: hidden;       /*hide caption gradient overflow*/
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    background: #000;
+    box-shadow: 0 8px 20px rgba(0,0,0, .35);
+}
+.mirror-card img{
+    display: block;     /*remove inline gap*/
+    width: 100%;        /**/
+    height: 220px;      /*make every thumbnailimage same height*/
+    object-fit: cover;  /*crop without stretch*/
+    transition: transform .35s ease;
+}
+.mirror-card:hover img{ transform: scale(1.04);}
+
+/*caption gently fadesin from bottom*/
+.mirror-card figcaption{
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 10px 12px; color: #fff; font-size: .95rem;
+    background: linear-gradient(to top,rgba(0, 0, 0, .6), transparent);
+    opacity: 0; transform: translateY(6px);
+    transition: opacity .25s ease, transform .25s ease;
+}
+.mirror-card:hover figcaption{ opacity: 1; transform: translateY(0); }
+
+
+/*5) form (bootstrap provide structure we give theme)*/
+
+.mirror-form {
+    max-width: 560px;
+    background:#111;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.35);
+
+}
+.mirror-form.form-control,
+.mirror-form.form-select{
+    background: #0f0f0f; color: var(--ink);
+    border: 1px solid #333;
+
+}
+.mirror-form .form-control:focus,
+.mirror-form .form-select:focus{
+    border-color: var(--accent);
+    box-shadow: 0 0 0 .2rem rgba(192,163, 110, .2);
+}
+.tiny{ color: var(--muted);
+
+/*6 VIDEO ( Making iframe responsive)*/
+
+.video-container{
+    position:absolute; width: 100%; padding-bottom: 56.26%;/*16:9 */
+    border-radius: 12px; overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,.35);    
+}
+
+.video-container iframe{ position: absolute; inset: 0; width: 100%; height: 100%; }
+
+
+/*7 stillness toggle(greyscale when on)*/
+
+#still:checked ~ header .toggle{ background:#1d1d1d; color: var(--accent);}
+#still:checked ~ main{ filter: grayscale(100%) contrast(1.02);}
+
+/*8) footer*/
+
+.foot{
+    text-align: center;
+    color: var(--muted);
+    padding: 20px  12px;
+    border-top: 1px solid #1f1f1f;
+    background: #0d0d0d;
+}
+/*9) SMALL-PHONE TWEAKS FOR TINY SCREENS*/
+@media (max-width: 480px){
+    .mirror-card img{ height: 180px;}
+}
