@@ -169,12 +169,12 @@ we show the matching message when the corresponding radio is clicked.**gam***
     border-color: var(--accent);
     box-shadow: 0 0 0 .2rem rgba(192,163, 110, .2);
 }
-.tiny{ color: var(--muted);
+.tiny{ color: var(--muted);}
 
 /*6 VIDEO ( Making iframe responsive)*/
 
 .video-container{
-    position:absolute; width: 100%; padding-bottom: 56.26%;/*16:9 */
+    position:relative; width: 100%; padding-bottom: 56.26%;/*16:9 */
     border-radius: 12px; overflow: hidden;
     box-shadow: 0 10px 24px rgba(0,0,0,.35);    
 }
