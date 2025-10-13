@@ -16,7 +16,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
             rel="stylesheet"
          >
-        <link rel="stylesheet" type ="text/css" href=" /css/reflections.css">
+        <link rel="stylesheet" type ="text/css" href="css/reflections.css">
 
 
 
@@ -27,15 +27,13 @@
     <body>
 
         <!--perception toggle-->
-        
+        <!--ReadMe: the hidden checkbox #still  is a "PERCEPTION-SWITCH".
+        When checked, CSS can gray-out the page (stillness-Mode).
+        It must be before Header/main so sibling selectors can target them.
+         -->
+
         <input id="still" type ="checkbox" hidden>
-        
-        <!--
-        id still type checkbox is used  hidden because
-        this is a perception toggle effect..
-        when checked the page can shift to "stillness mode "
-        using css filters.
-        -->
+        <!--HEADER (top navigation bar) -->
 
         <header class="bar">
 
@@ -56,7 +54,7 @@
                     <a href="#practice">Practice</a>
                     <a href="#gallery">Gallery</a>
                     <a href="#pledge" class ="btn btn-sm btn-outline-light">Pledge</a>
-                    <label for="still" class ="toggle">Stillness</label><!--class toggle is used because  -->
+                    <label for="still" class ="toggle">Stillness</label><!--class toggle is used here..  -->
                  </nav>
             </div>         
         </header>
@@ -82,7 +80,7 @@
             </section>
 
             <!--PRACTICE: three step utility that guides your attention-->
-            <section class ="practice py-5">
+            <section class ="practice py-5" id="practice">
                 <div class ="container">
                     <h2 class="text-center mb-4">
                         Three&infin;minute&infin;MirRor&infin;Practice
@@ -164,64 +162,56 @@
                                 <figcaption>&infin; sir , reflection fades when YOU the seer remembers nothing was ever seen.&infin;</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="row g-3">
+                    
                         <div class="col-12 col-sm-6 col-md-4">
                             <figure class="mirror-card">
                                 <img src="images/thumbs/thumbnail_2.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
                                 <figcaption>&infin;sir, faces dissolve when YOU stop chasing the image and rest as still awareness.&infin;</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="row g-3">
+                    
                         <div class="col-12 col-sm-6 col-md-4">
                             <figure class="mirror-card">
                                 <img src="images/thumbs/thumbnail_3.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
                                 <figcaption>&infin;sir, the mirror never shows — it only returns the space YOU already are.&infin;</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="row g-3">
+                    
                         <div class="col-12 col-sm-6 col-md-4">
                             <figure class="mirror-card">
                                 <img src="images/thumbs/thumbnail_4.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
                                 <figcaption>&infin;sir, what YOU call reflection is light remembering its source.&infin;</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="row g-3">
+                    
                         <div class="col-12 col-sm-6 col-md-4">
                             <figure class="mirror-card">
                                 <img src="images/thumbs/thumbnail_5.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
                                 <figcaption>&infin; sir, when the mirror becomes clear, even the idea of YOU disappears.&infin;</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="row g-3">
+                    
                         <div class="col-12 col-sm-6 col-md-4">
                             <figure class="mirror-card">
                                 <img src="images/thumbs/thumbnail_6.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
                                 <figcaption>&infin;sir, when the mirror shatters, awareness smiles — nothing was ever broken.&infin;</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="row g-3">
+                   
                         <div class="col-12 col-sm-6 col-md-4">
                             <figure class="mirror-card">
                                 <img src="images/thumbs/thumbnail_7.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
                                 <figcaption>&infin;sir, seen and seeing vanish together when YOU stop standing between them.&infin;</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="row g-3">
+
                         <div class="col-12 col-sm-6 col-md-4">
                             <figure class="mirror-card">
                                 <img src="images/thumbs/thumbnail_8.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
                                 <figcaption>&infin; sir, illusion bows down when YOU stop needing to see the face of Truth.&infin;</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="row g-3">
+
                         <div class="col-12 col-sm-6 col-md-4">
                             <figure class="mirror-card">
                                 <img src="images/thumbs/thumbnail_9.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
@@ -229,7 +219,6 @@
                             </figure>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -246,11 +235,11 @@
                         </label>
 
                         <label class="form-label" >Email
-                            <input class="form-control" type="email" name="email" placeholder="enter an email that you believe as yours sir..." required>
+                            <input class="form-control" type="email" name="Email" placeholder="enter an email that you believe as yours sir..." required>
                         </label>
                         
                         <label class="form-label">Intent
-                            <select class="form-select" name-"Intent">
+                            <select class="form-select" name=Intent">
                                 <option>Clarity</option>
                                 <option>Detachment</option>
                                 <option>Compassion</option>
