@@ -1,0 +1,26 @@
+/*gam*/
+/*READ ME LIKE A STORY*/
+
+/*WHAT are we doing?
+-HTML is the body.
+-bootstrap is box of readymade clothes  already stiched with buttons,grids and spacings.
+-reflections.css is the rooom where we color and decorate the clothes..
+
+
+HOW DO WE STYLE?
+-USE Bootstrap classes for quick layout.
+-work inside reflections.css to paint a life to style this (colors,shadows,hover effects)
+
+SIMPLE RULES::
+-BOOTSTRAP  link first.
+-reflections.css link next.
+-Test one section at a time(header -> hero -> Practice -> Gallery -> Pledge).
+
+MORE valuable Words for a fool like me::
+
+-*"make it in a line"= display: flex ( or Bootstrap row/col).
+-*"make it in a box"= padding+border+shadow.
+-*"All Pictures same size" = height is same + object-fit: cover.
+
+/*gam*/
+

@@ -11,13 +11,15 @@
       
         <!--Author : Jayakrishnan Parameswarankutty;content: html and css assignment on external css file -->
         <!--Description: this is the file created as a part of assignment on external css file -->
-        <!--link rel="stylesheet" type ="text/css" href="mirrorstyle.css"-->
+        
         <link
-            href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
             rel="stylesheet"
          >
+         <link rel="stylesheet" type ="text/css" href="reflections.css>
 
-         
+
+
 
 
     </head>
@@ -34,26 +36,33 @@
         -->
 
         <header class="bar">
+
         <!--
         class "bar" is used here.
         -purpose :- bar class header will define -
         top navigation bar container.
         -elements inside:- brandlink+ navigation link+ stillness toggle
         -->
-            <a class ="brand" href="#">&infin;tHe&infin;miRroR&infin;</a>
+            <div class = "container d-flex justify-content-between align-items-center">            
+                <a class ="brand" href="#">&infin;tHe&infin;miRroR&infin;</a>
             <!-- 
             class brand 
             displays logo /title text of the website.
             represents infinite awareness styled as &infin;tHe&infin;miRor&infin;
             -->
-            <nav>
-                <a href="#practice">Practice</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#pledge" class ="btn">Pledge</a>
-                <label for="still" class ="toggle">Stillness</label><!--class toggle is used because  -->
-            </nav>
-            
+                <nav class="d-flex gap-3">
+                    <a href="#practice">Practice</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#pledge" class ="btn btn-sm btn-outline-light">Pledge</a>
+                    <label for="still" class ="toggle">Stillness</label><!--class toggle is used because  -->
+                 </nav>
+            </div>         
         </header>
+
+
+
+
+
         <main id="wrap"><!--wrap id is used  for -->
             <!--hero-->
             <section class = "hero">
@@ -71,137 +80,197 @@
             </section>
 
             <!--PRACTICE: three step utility that guides your attention-->
-            <section class ="practice" class="box">
-                <h2>
-                    Three&infin;minute&infin;MirRor&infin;Practice
-                </h2>
-                
-                <!--step1-->
-                <article class="card">
-                    <h3>
-                        1) Align
-                    </h3>
-                    <p>
-                       &infin; Hold a Mirror (or a mirror photo) at eye level , and sit tall sir. &infin;
-                    </p>
-                    <label class ="check"><input type="checkbox">?&infin;Ready&infin;sir&infin;</label>
-                </article>
-                
-                <!--step2-->
-                <article class="card">
-                    <h3>
-                        2) Name is frame
-                    </h3>
-                    <p>
-                        &infin;Gently label what appears:"face, light , Breathing".  Then ask sir: <em>Who inexplicably knows this</em>&infin;
-                    </p>
-                    <details>
-                        <summary>Hints</summary>
-                        <ul>
-                            <li>"Thoughts will come for sure, realize thought s are not you ,but it s here to control you and remind you that you are this ego identity sir"</li>
-                            <li>"bad thoughts come - its not you just remember thoughts are not you "</li>
-                            <li>"you are not the dream but the dream is happening inside you sir"</li>
+            <section class ="practice py-5">
+                <div class ="container">
+                    <h2 class="text-center mb-4">
+                        Three&infin;minute&infin;MirRor&infin;Practice
+                    </h2>
+                    <!--step1-->
+                    <!--using bootstrap spacing helpers(mb3 = margin-bottom)-->
+                    <article class="card mx-auto mb-3" style="max-width: 700px;">
+                        <h3>
+                            1) Align
+                        </h3>
+                        <p>
+                            &infin; Hold a Mirror (or a mirror photo) at eye level , and sit tall sir. &infin;
+                        </p>
+                        <label class ="check"><input type="checkbox">?&infin;Ready&infin;sir&infin;</label>
+                    </article>
+
+                    <!--step2-->
+                    <article class="card mx-auto mb-3" style="max-width: 700px;">
+                        <h3>
+                            2) Name is frame
+                        </h3>
+                        <p>
+                            &infin;Gently label what appears:"face, light , Breathing".  Then ask sir: <em>Who inexplicably knows this</em>&infin;
+                        </p>
+                        <details>
+                            <summary>Hints</summary>
+                            <ul>
+                                <li>"Thoughts will come for sure, realize thought s are not you ,but it s here to control you and remind you that you are this ego identity sir"</li>
+                                <li>"bad thoughts come - its not you just remember thoughts are not you "</li>
+                                <li>"you are not the dream but the dream is happening inside you sir"</li>
                         
-                        </ul>                                       
+                            </ul>                                       
 
-                    </details>
-                    <label class ="check"><input type="checkbox">?&infin;Done&infin;sir&infin;</label>
+                        </details>
+                        <label class ="check"><input type="checkbox">?&infin;Done&infin;sir&infin;</label>
+                    </article>
 
-                </article>
-               
-                <!--step3-->
-                <article class="card">
-                    <h3>
-                        3) Accept or Reject&infin;NOW&infin;
-                    </h3>
-                    <p>
-                        &infin;Choose honestly sir and see the effect in your awareness.&infin;
-                    </p>
-                    <div class="choices">
-                        <input type="radio" name ="choice" id ="accept" checked>
-                        <label for ="accept">&infin;Accept&infin;</label>
-                        <input type="radio" name="choice" id="reject">
-                        <label for="reject">&infin;Reject&infin;</label>
-                        <div class ="result accept">
-                            "&infin;Acceptance soften the edges of ego and seer clarity will only advance&infin;"
+
+                    <!--step3-->
+                    <article class="card mx-auto mb-3" style="max-width: 700px;">
+                        <h3>
+                            3) Accept or Reject&infin;NOW&infin;
+                        </h3>
+                        <p>
+                            &infin;Choose honestly sir and see the effect in your awareness.&infin;
+                        </p>
+                        <div class="choices">
+                            <input type="radio" name ="choice" id ="accept" checked>
+                            <label for ="accept">&infin;Accept&infin;</label>
+                            <input type="radio" name="choice" id="reject">
+                            <label for="reject">&infin;Reject&infin;</label>
+                            <div class ="result accept">
+                                "&infin;Acceptance soften the edges of ego and seer clarity will only advance&infin;"
+                            </div>
+                            <div class ="result reject">
+                                "&infin;Rejection tightens the frame of ego, so kindly notice only channel to advance is acceptance.. the other channels are only trenches of illusions &infin; "
+                            </div>
                         </div>
-                        <div class ="result reject">
-                            "&infin;Rejection tightens the frame of ego, so kindly notice only channel to advance is acceptance.. the other channels are only trenches of illusions &infin; "
-                        </div>
-                    </div>
-                    <p class="mantra">&infin;be the seer and look through the gods eye to see the truth of twelve suns behind this one illusory dummy sun&infin;</p>
-                </article>
-
+                        <p class="mantra">&infin;be the seer and look through the gods eye to see the truth of twelve suns behind this one illusory dummy sun&infin;</p>
+                    </article>                    
+                </div>             
             </section>
 
-            <!--GALLERY with mirror images+ wisdom captions on hover-->
-            <section id ="gallery" class = "box">
-                <h2>
-                    GALLERY OF&infin;REFLECTIONS&infin;
-                </h2>
-                <div class ="grid">
-                    <!--replace the src of each image tag with the image names of file inside imgages dir*gam^-->
-                    <figure>
-                        <img src="images/thumbs/thumbnail_1.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin; sir , reflection fades when YOU the seer remembers nothing was ever seen.&infin;</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/thumbs/thumbnail_2.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin;sir, faces dissolve when YOU stop chasing the image and rest as still awareness.&infin;</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/thumbs/thumbnail_3.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin;sir, the mirror never shows — it only returns the space YOU already are.&infin;</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/thumbs/thumbnail_4.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin;sir, what YOU call reflection is light remembering its source.&infin;</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/thumbs/thumbnail_5.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin; sir, when the mirror becomes clear, even the idea of YOU disappears.&infin;</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/thumbs/thumbnail_6.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin;sir, when the mirror shatters, awareness smiles — nothing was ever broken.&infin;</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/thumbs/thumbnail_7.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin;sir, seen and seeing vanish together when YOU stop standing between them.&infin;</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/thumbs/thumbnail_8.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin; sir, illusion bows down when YOU stop needing to see the face of Truth.&infin;</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/thumbs/thumbnail_9.jpg" alt ="&infin;not seeing the mirror is highest wisdom&infin;"><figcaption>&infin;sir, beyond every mirror lies the still water of Infinite YOU.&infin;</figcaption>
-                    </figure>
-                </div>
 
+
+
+            <!--GALLERY with mirror images+ wisdom captions on hover-->
+            <section id ="gallery" class = "box py-5">
+
+                <div class="container">
+                    <h2 class="text-center mb-4">
+                         GALLERY OF&infin;REFLECTIONS&infin;
+                    </h2>
+                    <!--row = a line, col-md-4=3 in a line on medium screens-->
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_1.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin; sir , reflection fades when YOU the seer remembers nothing was ever seen.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_2.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin;sir, faces dissolve when YOU stop chasing the image and rest as still awareness.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_3.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin;sir, the mirror never shows — it only returns the space YOU already are.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_4.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin;sir, what YOU call reflection is light remembering its source.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_5.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin; sir, when the mirror becomes clear, even the idea of YOU disappears.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_6.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin;sir, when the mirror shatters, awareness smiles — nothing was ever broken.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_7.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin;sir, seen and seeing vanish together when YOU stop standing between them.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_8.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin; sir, illusion bows down when YOU stop needing to see the face of Truth.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <figure class="mirror-card">
+                                <img src="images/thumbs/thumbnail_9.jpg" alt="&infin;not seeing the mirror is highest wisdom&infin;">
+                                <figcaption>&infin;sir, beyond every mirror lies the still water of Infinite YOU.&infin;</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
             <!--Pledge form+(mail to form) as a simple commitment utility-->
-            <section id ="pledge" class ="box">
-                <h2>
-                    Pledge: &infin;7&infin;days of &infin;mirRor&infin;PRACTICE.
-                </h2>
-                <form action="mailto:you@mirror.com" method="post" enctype="text/plain">
-                    <label>Name<input name="Name" required></label>
-                    <label>Email<input type="email" name="Email" required></label>
-                    <label>
-                        Intent
-                        <select name="Intent">
-                            <option>Clarity</option>
-                            <option>Detachment</option>
-                            <option>Compassion</option>                            
-                        </select>
-                    </label>
-                    <label class ="agree">
-                        <input type="checkbox" required>
-                        I will do three minutes daily and note one sentence of insight.                    
-                    </label>
-                    <div class ="actions">
-                        <button type="submit" class = "btn">Send&infin;Pledge</button>
-                        <button type ="reset" class ="btn ghost">clear&infin;Ripples</button>
+            <section id ="pledge" class ="box py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">
+                        Pledge: &infin;7&infin;days of &infin;mirRor&infin;PRACTICE.
+                    </h2>
 
-                    </div>
-                </form>
-                <p class="tiny">
-                    Submitting opens your email app , no data is stored here as the maker of this app doesnt carry attachments of &infin;memory&infin;ripples.
+                    <form class="mirror-form mx-auto" action="mailto:you@mirror.com" method="post" enctype="text/plain">
+                        <label class="form-label">Name 
+                            <input class=""form-control" name="Name"  placeholder="enter your wonderful current name sir.."required>
+                        </label>
 
-                </p>
+                        <label class="form-label" >Email
+                            <input class="form-control" type="email" name="email" placeholder="enter an email that you believe as yours sir..." required>
+                        </label>
+                        
+                        <label class="form-label">Intent
+                            <select class="form-select" name-"Intent">
+                                <option>Clarity</option>
+                                <option>Detachment</option>
+                                <option>Compassion</option>
+                            </select>
+                        </label>
+
+                        <label class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" required>
+                            <span class="form-check-label">i will do three minutes daily and note one sentence of insight.</span>
+                        </label>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-warning">send&infin;Pledge</button>
+                            <button type="reset" class="btn btn-outline-secondary">clear&infin;Ripples</button>
+                        </div>
+                    </form>
+
+                    <p class="tiny text-center mt-2">
+                        Submitting opens your email app ,  No data is stored here as the maker of this app doesnt carry attachments of &infin;memory&infin;ripples.
+                    </p>
+                </div>               
+                    
             </section>
 
         </main>
