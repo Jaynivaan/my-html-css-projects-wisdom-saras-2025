@@ -81,7 +81,7 @@ body{
     padding: 0 1rem;
 }
 
-.hero-txt h1{ color: var(--accent); font-size: clamp(1.6rem, 3vw, 2.6rem;);}
+.hero-txt h1{ color: var(--accent); font-size: clamp(2.6rem, 5vw, 3.6rem;);}
 .hero-txt p{ color: #e6e6e6; }
 .btn{ border-radius: 8px; font-weight: 700; }
 
