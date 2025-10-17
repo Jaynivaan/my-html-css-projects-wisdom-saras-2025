@@ -16,6 +16,7 @@ p {
 
 }
 
+
 .photo-container {
     text-align: center;
     margin: 15px auto;
@@ -57,7 +58,7 @@ photo overlay transitions
 =========================*/
 
 .photo-container {
-    opacity: 0;
+    opacity: 1;
     transition: opacity .1s;
     border-radius: 10px;
     cursor: pointer;
@@ -70,3 +71,19 @@ photo overlay transitions
     color: #fff;
 
 }
+
+.photo-overlay:hover {
+    opacity:1;
+
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+
+}
+
+.photko:hover img {
+    transform: scale(1.1);
+}
+
