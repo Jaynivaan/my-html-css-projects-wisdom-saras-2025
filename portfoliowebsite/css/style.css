@@ -20,3 +20,70 @@ body.skeleton-mode *:not(.skeleton-keep) :not(.skeleton-keep *) {
     pointer-events: none !important;
     user-select: none !important;
 }
+details.skeleton.active-skeleton, details.skeleton.active-skeleton*{
+    filter:none !important;
+    pointer-events: auto !important;
+}
+/*typewriter for skeleton code.*/
+.skeleton code.typing{
+    position:relative;
+    white-space: prewrap;
+    word-break: break-word;
+}
+.skeleton code.typing::after{
+    content: "";
+    position: absolute;
+    width: 1ch;
+    height: 1em;
+    border-right: 2px solid currentColor;
+    right: -2px;
+    animation: blink 0.9s steps(1,end) infinite;
+
+}
+@keyframes blink { 50% { opacity: .2; } }
+
+/*genesismirror*/
+
+#genesis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background:#000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.mirror {
+    width: 320px;
+    height: 320px;
+    border-radius: 8px ;
+    background: linear-gradient(135deg, #ff6, #6ff, #f6f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.2), 0 0 100px rgba(0, 255, 255, 0.2);
+    transition: transform .4s ease, filter .4s ease;
+    transform-style: preserve-3d;
+}
+
+.mirror-inner {
+    perspective: 800px;
+    text-align: center;
+    transform: translateZ(40px);
+}
+
+.mirror-text {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+    animation: floatText 6s ease-in-out infinite alternate;
+
+}
+
+@keyframes floatText {
+    form{ transform: translateY(-8px) scale(1); opacity: 0.9;}
+    to { transform: translateY(8px) scale(1.02); opacity: 1;}
+}
