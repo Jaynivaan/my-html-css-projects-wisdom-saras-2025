@@ -229,3 +229,25 @@ details.skeleton pre {
   50%  { transform: scale(1.03); opacity: 1; }
   100% { transform: scale(1);   opacity: .9; }
 }
+
+
+#dev-links {
+  background:linear-gradient(180deg, #f9fafc,#eef1f7);
+
+}
+#dev-links .btn {
+  border-radius : 40px;
+  font-weight:500;
+  transition: all 0.25s ease;
+}
+
+#dev-links .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,255,255,.04);
+}
+
+blockquote {
+  color: #444;
+  border-left: 4px solid #00cccc;
+  padding-left: 1rem;
+}
