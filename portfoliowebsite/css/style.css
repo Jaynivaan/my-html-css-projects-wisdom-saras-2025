@@ -293,6 +293,7 @@ details.skeleton pre {
 
 
 
+<<<<<<< HEAD
 /* =========================================================
    HERO SECTION — Cosmic root-powered style
    ========================================================= */
@@ -351,3 +352,7 @@ details.skeleton pre {
   100%{ opacity: .6; transform: scale(1); }
 }
   
+=======
+/*Hero section===
+==========================*/
+>>>>>>> hero-styles-local
