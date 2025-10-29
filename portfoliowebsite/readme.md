@@ -1,3 +1,7 @@
+gam***gam***gam*
+
+
+
 Portfolio website specific readme
 ==================================
 hi sir, this is a website i created as part of my assignment.. 
@@ -54,7 +58,7 @@ How to run this ..
 
 requirement: node
 
-clone the repository using hte command git clone "{copy the link of git hubhere}"
+clone the repository using hte command git clone "{(https://github.com/Jaynivaan/my-html-css-projects-wisdom-saras-2025/tree/main/portfoliowebsite)}"
 
 cd into portfoliowebsite
 
@@ -71,7 +75,7 @@ Thanks...
 =======================================================================
 ===========================the end=====================================
 =======================================================================
-
+gam
 
 
 
