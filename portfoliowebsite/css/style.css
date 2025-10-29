@@ -119,7 +119,7 @@ details.skeleton pre {
 .token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted { color: var(--accent); }
 
 /* =========================================================
-   GENESIS — swap hard-coded colors to variables
+   GENESIS — -coded colors to variables
    ========================================================= */
 #genesis {
   position: relative;
